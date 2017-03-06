@@ -30,6 +30,7 @@ setup(
     author_email='james_pic@hotmail.com',
     license='MIT',
     url='https://github.com/jamespic/cPrometheus',
+    download_url='https://github.com/jamespic/cPrometheus/archive/0.1.tar.gz',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     ext_modules=extensions,
@@ -40,5 +41,10 @@ setup(
     install_requires=[
         'prometheus_client>=0.0.12'
     ],
-    test_suite='tests'
+    test_suite='tests',
+    keywords=['monitoring'],
+    classifiers=[
+        'License :: OSI Approved :: MIT License',
+        'Topic :: System :: Monitoring'
+    ],
 )
